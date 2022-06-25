@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <title>monty_hall</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body">
+        <header><h1>welcome !!!</h1></header>
+        <div id="instructions" class="instructions">
+            <div id="row1" class="row1">please select a door</div>
+            <div id="d1">you selected door1</div>
+            <div id="d2">you selected door2</div>
+            <div id="d3">you selected door3</div>
+            <div id="row2" class="row2">
+                <p>okay i'm opening a door</p>
+                <p>wanna switch?</p>
+                <div class="buttons">
+                    <button id="btn-1">YES</button>
+                    <button id="btn-2">NO</button>
+                </div>
+            </div>
+        </div>
+
+        <main class="door-row">
+            <img id="door1" class="door"
+                 src="./sauce/door.jpg" alt="door">
+            <img id="door2" class="door"
+                 src="./sauce/door.jpg" alt="door">
+            <img id="door3" class="door"
+                 src="./sauce/door.jpg" alt="door">
+ 
+        </main>
+    </div>
+
+<div id="switchAndWin" class="result">
+    <p>congratulations!!!!!</p>
+    <p> u made the right choice by switching</p>
+    <p>the switch increased ur probability of winning to 0.67</p>
+    <div class="links">
+        <button>
+            <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" target="_blank"> more </a>
+        </button>
+        <button>
+            <a href="index.html"> play again ?</a></button>
+    </div>
+</div>
+
+<div id="switchAndLose" class="result">    
+    <p>you lost!!!</p>
+    <p>unfortunatly even tho u switched ya still lost ...the probability of you winning was 0.67</p>
+    <p>try again :'^)</p>
+        <div class="links">
+            <button>
+                <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" target="_blank"> more</a>
+            </button>
+            <button><a href="index.html">play again ?</a></button>
+        </div>
+</div>
+
+<div id="NoSwitchAndWin" class="result">
+<p>congratulations!!!!!</p>
+<p>hehe lucky u</p>
+<p>the probability of you winning was only 0.33 because you didn't switch,yet you still won</p>
+    <div class="links">
+            <button>
+                <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" target="_blank">more</a>
+            </button>
+            <button><a href="index.html">play again ?</a></button>
+    </div>
+</div>
+
+<div id="NoSwitchAndLose" class="result"> 
+<p>you Lost!!!!</p>
+<p>you didn't switch, your chances of winning were only 0.33</p>
+<p>try again :'^)</p>
+    <div class="links">
+        <button>
+            <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem"target="_blank">more</a>
+        </button>
+        <button><a href="index.html">Play again</a></button>
+    </div>
+</div>
+
+<script src="script.js" async defer></script>
+</body>
+</html>
